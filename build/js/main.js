@@ -40,8 +40,8 @@ $('.recContainer.owl-carousel').owlCarousel({
             items:1,
             nav:true
         },
-        600:{
-            items:3,
+        767:{
+            items:2,
             nav:false
         },
         1000:{
