@@ -585,6 +585,126 @@ video {
   }
 }
 
+.blogPara{
+  margin-bottom: 1rem;
+  opacity: 0.8;
+}
+
+.blogList{
+  list-style-type: disc;
+  margin-bottom: 1rem;
+  opacity: 0.8;
+  padding-left: 2rem;
+}
+
+.blogSubHeader{
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+  opacity: 0.8;
+}
+
+@media (min-width: 640px) {
+  .blogSubHeader {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    line-height: 1.5;
+  }
+}
+
+.blogLink{
+  display: block;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  margin-bottom: 1rem;
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+@media (min-width: 640px) {
+  .blogLink {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+.blogFigure{
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.recImg{
+  border-radius: 0.125rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+.recCate{
+  display: block;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+}
+
+.recTitle{
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  opacity: 0.8;
+}
+
+.recMeta{
+  display: flex;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  margin-top: 1rem;
+}
+
+.recAuthor{
+  --tw-border-opacity: 1;
+  border-color: rgba(0, 0, 0, var(--tw-border-opacity));
+  border-right-width: 2px;
+  display: block;
+  margin-right: 0.5rem;
+  padding-right: 0.5rem;
+  --tw-text-opacity: 1;
+  color: rgba(248, 113, 113, var(--tw-text-opacity));
+}
+
+/* customizing the carousel nav btns */
+
+.recContainer.owl-carousel .owl-next,
+  .recContainer.owl-carousel .owl-prev{
+  font-size: 50px!important;
+  line-height: 80px!important;
+  padding: 20px!important;
+  background-color: transparent!important;
+  outline: none!important;
+  font-weight: 300!important;
+  position: absolute!important;
+  top: 50%!important;
+  right: 0!important;
+  opacity: .6!important;
+  transition: .3s!important;
+}
+
+.recContainer.owl-carousel .owl-next:hover,
+  .recContainer.owl-carousel .owl-prev:hover{
+  color: #000!important;
+  opacity: 1!important;
+}
+
+.recContainer.owl-carousel .owl-prev{
+  left: 0!important;
+  right: auto!important;
+}
+
 .space-y-0 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
@@ -31173,32 +31293,6 @@ video {
 .animate-bounce {
   -webkit-animation: bounce 1s infinite;
           animation: bounce 1s infinite;
-}
-
-.recContainer.owl-carousel .owl-next,
-.recContainer.owl-carousel .owl-prev{
-  font-size: 50px!important;
-  line-height: 80px!important;
-  padding: 20px!important;
-  background-color: transparent!important;
-  outline: none!important;
-  font-weight: 300!important;
-  position: absolute!important;
-  top: 50%!important;
-  right: 0!important;
-  opacity: .6!important;
-  transition: .3s!important;
-}
-
-.recContainer.owl-carousel .owl-next:hover,
-.recContainer.owl-carousel .owl-prev:hover{
-  color: #000!important;
-  opacity: 1!important;
-}
-
-.recContainer.owl-carousel .owl-prev{
-  left: 0!important;
-  right: auto!important;
 }
 
 @media (min-width: 640px) {
