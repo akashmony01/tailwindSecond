@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.recContainer.owl-carousel .owl-next,
+.recContainer.owl-carousel .owl-prev{
+  font-size: 50px!important;
+  line-height: 80px!important;
+  padding: 20px!important;
+  background-color: transparent!important;
+  outline: none!important;
+  font-weight: 300!important;
+  position: absolute!important;
+  top: 50%!important;
+  right: 0!important;
+  opacity: .6!important;
+  transition: .3s!important;
+}
+
+.recContainer.owl-carousel .owl-next:hover,
+.recContainer.owl-carousel .owl-prev:hover{
+  color: #000!important;
+  opacity: 1!important;
+}
+
+.recContainer.owl-carousel .owl-prev{
+  left: 0!important;
+  right: auto!important;
+}
