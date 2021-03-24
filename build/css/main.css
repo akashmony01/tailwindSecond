@@ -585,6 +585,69 @@ video {
   }
 }
 
+.socialMenuScroll{
+  display: flex;
+  margin-bottom: 0.5rem;
+  position: static;
+  z-index: 40;
+}
+
+@media (min-width: 768px) {
+  .socialMenuScroll {
+    display: block;
+    margin-bottom: 0px;
+    margin-left: -4rem;
+    position: absolute;
+    top: 0.5rem;
+  }
+}
+
+.socialMenuFixed{
+  display: flex;
+  margin-bottom: 0.5rem;
+  position: static;
+  z-index: 40;
+}
+
+@media (min-width: 768px) {
+  .socialMenuFixed {
+    display: block;
+    margin-bottom: 0px;
+    margin-left: -4rem;
+    position: fixed;
+    top: 0.5rem;
+  }
+}
+
+.socialMenuItem{
+  --tw-bg-opacity: 1;
+  background-color: rgba(209, 213, 219, var(--tw-bg-opacity));
+}
+
+.socialMenuItem:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(251, 191, 36, var(--tw-bg-opacity));
+}
+
+.socialMenuItem {
+  border-radius: 9999px;
+  display: block;
+  height: 2.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  opacity: 0.5;
+}
+
+.socialMenuItem:hover {
+  opacity: 1;
+}
+
+.socialMenuItem {
+  text-align: center;
+  width: 2.5rem;
+  transition-duration: 300ms;
+}
+
 .blogPara{
   margin-bottom: 1rem;
   opacity: 0.8;

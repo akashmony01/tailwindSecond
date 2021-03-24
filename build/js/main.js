@@ -1,16 +1,21 @@
 // fixed and absolute social menu
-$(window).scroll(function(){
-    var scroll = $(window).scrollTop();
-    var newsTop = $("#newsLetter").offset().top;
-    var socialHeight = $("#socialMenu").outerHeight();
-    var showPoint = $("#blogContent").offset().top;
-    var hidePoint = newsTop - socialHeight;
+$(document).ready(function(){
+    if($(window).width() > 767){
 
-    if( scroll > showPoint && scroll < hidePoint){
-        $("#socialMenu").removeClass("absolute").addClass("fixed");
-    }
-    else{
-        $("#socialMenu").removeClass("fixed").addClass('absolute');
+        $(window).scroll(function(){
+            var scroll = $(window).scrollTop();
+            var newsTop = $("#newsLetter").offset().top;
+            var socialHeight = $("#socialMenu").outerHeight();
+            var showPoint = $("#blogContent").offset().top;
+            var hidePoint = newsTop - socialHeight;
+
+            if( scroll > showPoint && scroll < hidePoint){
+                $("#socialMenu").removeClass("socialMenuScroll").addClass("socialMenuFixed");
+            }
+            else{
+                $("#socialMenu").removeClass("socialMenuFixed").addClass('socialMenuScroll');
+            }
+        });
     }
 });
 

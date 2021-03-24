@@ -4,6 +4,18 @@
 
 @layer components {
 
+  .socialMenuScroll{
+    @apply flex md:block mb-2 md:mb-0 static md:absolute md:top-2 md:-ml-16 z-40;
+  }
+
+  .socialMenuFixed{
+    @apply flex md:block mb-2 md:mb-0 static md:fixed md:top-2 md:-ml-16 z-40;
+  }
+
+  .socialMenuItem{
+    @apply block mr-2 mb-2 w-10 h-10 bg-gray-300 text-center rounded-full opacity-50 duration-300 hover:bg-yellow-400 hover:opacity-100;
+  }
+
   .blogPara{
     @apply mb-4 opacity-80;
   }
