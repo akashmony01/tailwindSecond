@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="build/owl/owl.carousel.min.css">
     <link rel="stylesheet" href="build/owl/owl.theme.default.css">
     <!-- custom styling -->
-    <link rel="stylesheet" href="build/css/main.css">
+    <link rel="stylesheet" href="src/css/tailwind.css">
 </head>
 <body>
     <header>
@@ -64,7 +64,7 @@
                         </a>
                     </li>
                 </ul>
-                <h1 class="my-4 text-4xl font-bold leading-normal opacity-70">
+                <h1 class="my-4 text-2xl sm:text-4xl font-bold sm:leading-normal opacity-70">
                     KISS: A Showcase of Beautifully Simple Blog Design
                 </h1>
                 <div class="flex items-center my-5">
@@ -81,8 +81,37 @@
                         Jul 22, 2020
                     </h6>
                 </div>
-                <div class="text-base leading-loose mb-8">
-                    <p class="mb-4 opacity-80">
+                <div id="blogContent" class="relative text-base leading-loose mb-8">
+                    <!-- floating social menu -->
+                    <ul id="socialMenu" class="absolute top-2 -ml-16 z-40">
+                        <li class="block mb-2 w-10 h-10 bg-gray-300 text-center rounded-full opacity-50 duration-300 hover:bg-yellow-400 hover:opacity-100">
+                            <a class="block p-3" href="">
+                                <img class="w-full" src="build/img/instagram.png" alt="">
+                            </a>
+                        </li>
+                        <li class="block mb-2 w-10 h-10 bg-gray-300 text-center rounded-full opacity-50 duration-300 hover:bg-yellow-400 hover:opacity-100">
+                            <a class="block p-3" href="">
+                                <img class="w-full" src="build/img/instagram.png" alt="">
+                            </a>
+                        </li>
+                        <li class="block mb-2 w-10 h-10 bg-gray-300 text-center rounded-full opacity-50 duration-300 hover:bg-yellow-400 hover:opacity-100">
+                            <a class="block p-3" href="">
+                                <img class="w-full" src="build/img/instagram.png" alt="">
+                            </a>
+                        </li>
+                        <li class="block mb-2 w-10 h-10 bg-gray-300 text-center rounded-full opacity-50 duration-300 hover:bg-yellow-400 hover:opacity-100">
+                            <a class="block p-3" href="">
+                                <img class="w-full" src="build/img/instagram.png" alt="">
+                            </a>
+                        </li>
+                        <li class="block mb-2 w-10 h-10 bg-gray-300 text-center rounded-full opacity-50 duration-300 hover:bg-yellow-400 hover:opacity-100">
+                            <a class="block p-3" href="">
+                                <img class="w-full" src="build/img/instagram.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- main content -->
+                    <p class="blogPara">
                         As a member of the design community you have 
                         probably heard the expression ‘KISS’ before. For 
                         those of you who haven’t, it stands for ‘Keep it 
@@ -98,15 +127,15 @@
                         right, and it is these details 
                         that can make or break a simple web design.
                     </p>
-                    <p class="mb-4 opacity-80">
+                    <p class="blogPara">
                         There is a vast difference between some text slapped on a plain 
                         background and a stunningly minimal website design.
                     </p>
-                    <p class="mb-4 opacity-80">
+                    <p class="blogPara">
                         Often several aspects can distinguish a 
                         simple design as something special:
                     </p>
-                    <ul class="list-disc pl-8 mb-4 opacity-80">
+                    <ul class="blogList">
                         <li>
                             Awesome typography: Everything from line-spacing 
                             to letter-spacing needs to scream professionalism.
@@ -137,13 +166,13 @@
                             key content and leaves less room for distraction
                         </li>
                     </ul>
-                    <h4 class="mb-4 text-3xl font-bold leading-normal opacity-80">
+                    <h4 class="blogSubHeader">
                         KISS: A Showcase of Beautifully Simple Blog Design
                     </h4>
-                    <a class="block mb-4 text-2xl font-bold underline opacity-80" href="">
+                    <a class="blogLink" href="">
                         Biblioteket
                     </a>
-                    <p class="mb-4 opacity-80">
+                    <p class="blogPara">
                         Biblioteket is a classically simple blog design. The color 
                         palette is very limited, using a splash of teal for the 
                         background border and logo text. The menu and textual 
@@ -155,15 +184,15 @@
                         is amplified by a large amount of white 
                         space and padding around each book design.
                     </p>
-                    <figure class="py-4 px-8 mb-4">
+                    <figure class="blogFigure">
                         <a class="block" href="">
                             <img class="w-full" src="build/img/content1.jpg" alt="">
                         </a>
                     </figure>
-                    <a class="block mb-4 text-2xl font-bold underline opacity-80" href="">
+                    <a class="blogLink" href="">
                         Jason and Erin
                     </a>
-                    <p class="mb-4 opacity-80">
+                    <p class="blogPara">
                         Jason and Erin is a charmingly minimal blog run by a couple 
                         from Brooklyn. The site feels very focused, avoiding any 
                         sidebar content and concentrating instead on a basic one 
@@ -171,23 +200,23 @@
                         provide the perfect intro to the blog content, which is quite 
                         literally a list of photos and text, lovingly formatted.
                     </p>
-                    <figure class="py-4 px-8 mb-4">
+                    <figure class="blogFigure">
                         <a class="block" href="">
                             <img class="w-full" src="build/img/content2.jpg" alt="">
                         </a>
                     </figure>
                 </div>
                 <div class="text-base leading-loose mb-8">
-                    <h5 class="mb-4 text-2xl font-bold leading-normal opacity-80">
+                    <h5 class="mb-4 text-xl sm:text-2xl font-bold sm:leading-normal opacity-80">
                         What Do You Think?
                     </h5>
-                    <p class="mb-4 opacity-80">
+                    <p class="blogPara">
                         We would love to hear your opinion. Do you have any 
                         favorite examples from this post, or did you perhaps 
                         find a design that stood out to you 
                         especially? Let us know in the comments below.
                     </p>
-                    <p class="mb-4 opacity-80">
+                    <p class="blogPara">
                         (dpe)
                     </p>
                     <span class="block mb-8 text-sm italic opacity-80">
@@ -195,7 +224,7 @@
                     </span>
                 </div>
             </div>
-            <div class="container mx-auto px-4 md:px-14 max-w-screen-md">
+            <div id="newsLetter" class="container mx-auto px-4 md:px-14 max-w-screen-md">
                 <div class="flex items-stretch md:-mx-14 mb-20">
                     <div class="bg-green-300 py-4 px-10 flex items-center">
                         <img class="w-full" src="build/img/newsletter.svg" alt="">
@@ -241,7 +270,7 @@
         <!-- recommended section -->
         <section class="border-t-2 border-black-100">
             <div class="container mx-auto py-10 px-4 md:px-12">
-                <h2 class="font-bold text-3xl text-center mb-10 opacity-80">
+                <h2 class="font-bold text-2xl sm:text-3xl text-center mb-10 opacity-80">
                     RECOMMENDED ARTICLES
                 </h2>
                 <div class="recContainer owl-carousel px-10 owl-theme">
@@ -348,7 +377,79 @@
                 </div>
             </div>
         </section>
+        <!-- floating footer -->
+        <div id="floadingFooter" class="hidden bg-white border-t-2 border-gray-100 fixed bottom-0 left-0 right-0 z-50">
+            <div class="container flex items-center justify-between mx-auto py-4 px-4 md:px-14">
+                <a href="" class="block">
+                    <img class="w-full" src="build/img/logo.png" alt="">
+                </a>
+                <div class="flex items-center flex-wrap">
+                    <p class="text-sm text-gray-500 mr-2">
+                        Subscribe and get our newsletter
+                    </p>
+                    <form action="" class="relative">
+                        <input class="block px-3 py-2 pr-40 w-full bg-white-600 border-2 border-gray-200 rounded-sm" type="text" placeholder="Enter Your Email Address">
+                        <button class="bg-yellow-500 px-4 py-3 text-white text-sm border-transparent rounded-sm absolute right-0 top-0 bottom-0" type="submit">
+                            Subscribe Now
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </main>
+    <!-- footer esction -->
+    <footer id="footer" class="bg-blue-900">
+        <div class="container flex items-start justify-between mx-auto py-10 px-4 md:px-14">
+            <div class="footerLeft">
+                <ul class="flex flex-wrap text-sm text-white font-normal">
+                    <li class="border-r-2 border-white-100 pr-2 mr-2">
+                        <a href="" class="duration-300 hover:text-yellow-500">
+                            Terms & Conditions
+                        </a>
+                    </li>
+                    <li class="border-r-2 border-white-100 pr-2 mr-2">
+                        <a href="" class="duration-300 hover:text-yellow-500">
+                            Privacy Policy
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="" class="duration-300 hover:text-yellow-500">
+                            Security
+                        </a>
+                    </li>
+                </ul>
+                <p class="flex items-center text-white text-xs my-5">
+                    <svg class="w-5 mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+                    </svg>
+                    <span>
+                        111 Pine St. Suite 1815, San Francisco, CA 94111
+                    </span>
+                </p>
+                <p class="text-white text-xs my-4">
+                    © 2021 JotForm Inc.
+                </p>
+            </div>
+            <select class="p-2 w-40 bg-blue-700 rounded-md text-white text-sm" name="" id="">
+                <option value="">
+                    English
+                </option>
+                <option value="">
+                    Bengali
+                </option>
+
+                <option value="">
+                    French
+                </option>
+                <option value="">
+                    Turkish
+                </option>
+                <option value="">
+                    Japanese
+                </option>
+            </select>
+        </div>
+    </footer>
 
     <!-- jquer script -->
     <script src="build/js/jquery.min.js"></script>
