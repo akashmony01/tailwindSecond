@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base{
+  @font-face {
+    font-family: Open-Sans-Light;
+    src: url('fonts/Open_Sans/OpenSans-Light.ttf');
+  }
+  @font-face {
+      font-family: Open-Sans-Regular;
+      src: url('fonts/Open_Sans/OpenSans-Regular.ttf');
+  }
+  @font-face {
+    font-family: Open-Sans-Bold;
+    src: url('fonts/Open_Sans/OpenSans-Bold.ttf');
+  }
+}
+
 @layer components {
 
   .socialMenuScroll{
@@ -16,6 +31,10 @@
     @apply block mr-2 mb-2 w-10 h-10 bg-gray-300 text-center rounded-full opacity-50 duration-300 hover:bg-yellow-400 hover:opacity-100;
   }
 
+  .blogMainHeader{
+    @apply my-4 text-2xl sm:text-4xl font-bold font-openSansBold sm:leading-normal opacity-70
+  }
+
   .blogPara{
     @apply mb-4 opacity-80;
   }
@@ -25,11 +44,11 @@
   }
 
   .blogSubHeader{
-    @apply mb-4 text-2xl sm:text-3xl font-bold sm:leading-normal opacity-80;
+    @apply mb-4 text-2xl sm:text-3xl font-bold font-openSansBold sm:leading-normal opacity-80;
   }
 
   .blogLink{
-    @apply block mb-4 text-xl sm:text-2xl font-bold underline opacity-80;
+    @apply block mb-4 text-xl sm:text-2xl font-bold font-openSansBold underline opacity-80;
   }
 
   .blogFigure{
@@ -45,7 +64,7 @@
   }
 
   .recTitle{
-    @apply font-bold text-2xl opacity-80;
+    @apply font-bold font-openSansBold text-2xl opacity-80;
   }
 
   .recMeta{

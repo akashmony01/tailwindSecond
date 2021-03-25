@@ -551,6 +551,24 @@ video {
   height: auto;
 }
 
+@font-face {
+  font-family: Open-Sans-Light;
+
+  src: url('fonts/Open_Sans/OpenSans-Light.ttf');
+}
+
+@font-face {
+  font-family: Open-Sans-Regular;
+
+  src: url('fonts/Open_Sans/OpenSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: Open-Sans-Bold;
+
+  src: url('fonts/Open_Sans/OpenSans-Bold.ttf');
+}
+
 .container {
   width: 100%;
 }
@@ -648,6 +666,24 @@ video {
   transition-duration: 300ms;
 }
 
+.blogMainHeader{
+  font-family: Open-Sans-Bold;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  opacity: 0.7
+}
+
+@media (min-width: 640px) {
+  .blogMainHeader {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    line-height: 1.5;
+  }
+}
+
 .blogPara{
   margin-bottom: 1rem;
   opacity: 0.8;
@@ -661,6 +697,7 @@ video {
 }
 
 .blogSubHeader{
+  font-family: Open-Sans-Bold;
   font-weight: 700;
   font-size: 1.5rem;
   line-height: 2rem;
@@ -678,6 +715,7 @@ video {
 
 .blogLink{
   display: block;
+  font-family: Open-Sans-Bold;
   font-weight: 700;
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -716,6 +754,7 @@ video {
 }
 
 .recTitle{
+  font-family: Open-Sans-Bold;
   font-weight: 700;
   font-size: 1.5rem;
   line-height: 2rem;
@@ -11408,6 +11447,18 @@ video {
 
 .font-mono {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.font-openSansLight {
+  font-family: Open-Sans-Light;
+}
+
+.font-openSansRegular {
+  font-family: Open-Sans-Regular;
+}
+
+.font-openSansBold {
+  font-family: Open-Sans-Bold;
 }
 
 .font-thin {
@@ -42035,6 +42086,18 @@ video {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .sm\:font-openSansLight {
+    font-family: Open-Sans-Light;
+  }
+
+  .sm\:font-openSansRegular {
+    font-family: Open-Sans-Regular;
+  }
+
+  .sm\:font-openSansBold {
+    font-family: Open-Sans-Bold;
+  }
+
   .sm\:font-thin {
     font-weight: 100;
   }
@@ -72580,6 +72643,18 @@ video {
 
   .md\:font-mono {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .md\:font-openSansLight {
+    font-family: Open-Sans-Light;
+  }
+
+  .md\:font-openSansRegular {
+    font-family: Open-Sans-Regular;
+  }
+
+  .md\:font-openSansBold {
+    font-family: Open-Sans-Bold;
   }
 
   .md\:font-thin {
@@ -103129,6 +103204,18 @@ video {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .lg\:font-openSansLight {
+    font-family: Open-Sans-Light;
+  }
+
+  .lg\:font-openSansRegular {
+    font-family: Open-Sans-Regular;
+  }
+
+  .lg\:font-openSansBold {
+    font-family: Open-Sans-Bold;
+  }
+
   .lg\:font-thin {
     font-weight: 100;
   }
@@ -133676,6 +133763,18 @@ video {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .xl\:font-openSansLight {
+    font-family: Open-Sans-Light;
+  }
+
+  .xl\:font-openSansRegular {
+    font-family: Open-Sans-Regular;
+  }
+
+  .xl\:font-openSansBold {
+    font-family: Open-Sans-Bold;
+  }
+
   .xl\:font-thin {
     font-weight: 100;
   }
@@ -164221,6 +164320,18 @@ video {
 
   .\32xl\:font-mono {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .\32xl\:font-openSansLight {
+    font-family: Open-Sans-Light;
+  }
+
+  .\32xl\:font-openSansRegular {
+    font-family: Open-Sans-Regular;
+  }
+
+  .\32xl\:font-openSansBold {
+    font-family: Open-Sans-Bold;
   }
 
   .\32xl\:font-thin {
