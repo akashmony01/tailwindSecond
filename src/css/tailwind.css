@@ -32,7 +32,7 @@
   }
 
   .blogMainHeader{
-    @apply my-4 text-2xl sm:text-4xl font-bold font-openSansBold sm:leading-normal opacity-70
+    @apply my-4 text-2xl sm:text-4xl font-bold font-openSansBold sm:leading-normal opacity-70;
   }
 
   .blogPara{
