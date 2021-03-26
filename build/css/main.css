@@ -569,6 +569,12 @@ video {
   src: url('fonts/Open_Sans/OpenSans-Bold.ttf');
 }
 
+@font-face {
+  font-family: Open-Sans-Extra-Bold;
+
+  src: url('fonts/Open_Sans/OpenSans-Bold.ttf');
+}
+
 .container {
   width: 100%;
 }
@@ -11459,6 +11465,10 @@ video {
 
 .font-openSansBold {
   font-family: Open-Sans-Bold;
+}
+
+.font-openSansEXtraBold {
+  font-family: Open-Sans-Extra-Bold;
 }
 
 .font-thin {
@@ -42098,6 +42108,10 @@ video {
     font-family: Open-Sans-Bold;
   }
 
+  .sm\:font-openSansEXtraBold {
+    font-family: Open-Sans-Extra-Bold;
+  }
+
   .sm\:font-thin {
     font-weight: 100;
   }
@@ -72655,6 +72669,10 @@ video {
 
   .md\:font-openSansBold {
     font-family: Open-Sans-Bold;
+  }
+
+  .md\:font-openSansEXtraBold {
+    font-family: Open-Sans-Extra-Bold;
   }
 
   .md\:font-thin {
@@ -103216,6 +103234,10 @@ video {
     font-family: Open-Sans-Bold;
   }
 
+  .lg\:font-openSansEXtraBold {
+    font-family: Open-Sans-Extra-Bold;
+  }
+
   .lg\:font-thin {
     font-weight: 100;
   }
@@ -133775,6 +133797,10 @@ video {
     font-family: Open-Sans-Bold;
   }
 
+  .xl\:font-openSansEXtraBold {
+    font-family: Open-Sans-Extra-Bold;
+  }
+
   .xl\:font-thin {
     font-weight: 100;
   }
@@ -164332,6 +164358,10 @@ video {
 
   .\32xl\:font-openSansBold {
     font-family: Open-Sans-Bold;
+  }
+
+  .\32xl\:font-openSansEXtraBold {
+    font-family: Open-Sans-Extra-Bold;
   }
 
   .\32xl\:font-thin {

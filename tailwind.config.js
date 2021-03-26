@@ -7,6 +7,7 @@ module.exports = {
         openSansLight: ['Open-Sans-Light'],
         openSansRegular: ['Open-Sans-Regular'],
         openSansBold: ['Open-Sans-Bold'],
+        openSansEXtraBold: ['Open-Sans-Extra-Bold'],
       }
     },
   },
